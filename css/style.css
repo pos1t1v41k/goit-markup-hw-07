@@ -392,6 +392,7 @@ p {
 .exercise-text {
    color: var(--primary-white-color);
    font-style: normal;
+   line-height: 1.15;
    font-weight: 700;
    font-size: 14px;
    line-height: 16px;
