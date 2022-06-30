@@ -281,13 +281,14 @@
                <li class="page-footer-social__item"><a class="page-footer-social__link" href="#"><svg class="page-foooter-social-icon__link"><use href="./img/symbol-defs1.svg#icon-in"></use></svg></a></li>
             </ul>
          </div>
-         <div class="footer-form__column">
-            <p class="text-column">Подпишитесь на рассылку</p>
+         <div class="page-footer__form">
+            <p class="page-footer-form__text">Подпишитесь на рассылку</p>
             <form>
-            <div class="footer-field">
-            <input class="email-footer" type="email" placeholder="E-mail">
-            <button class="btn-footer-submit" type="submit">Подписаться
-               <svg class="icon-send">
+            <div class="page-footer__field">
+               <label for="footer-email"></label>
+            <input class="page-footer__email"   required type="text" name="email" id="footer-email" placeholder="E-mail">
+            <button class="page-footer__btn" type="submit">Подписаться
+               <svg class="page-footer__icon">
                   <use href="./img/icon-send.svg#icon-send"></use>
                </svg>
             </button>
@@ -298,49 +299,49 @@
    </footer>
    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-         <button data-modal-close type="button" class="modal-button">
-            <svg class="modal-icon">
+         <button data-modal-close type="button" class="modal__button">
+            <svg class="modal__icon">
                <use href="./img/across.svg#icon-across"></use>
             </svg>
          </button>
-         <form class="modal-form">
-         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-         <label class="modal-form-field">
-            <span class="modal-form-label">Имя</span>
-               <input class="modal-form-input" required="" type="text" name="name">
-            <svg class="modal-form-icon">
+      <form class="modal__form">
+         <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
+         <label class="modal-form__field">
+            <span class="modal-form__label">Имя</span>
+               <input class="modal-form__input" required="" type="text" name="name">
+            <svg class="modal-form__icon">
                <use href="./img/modal-icon.svg#icon-person"></use>
             </svg>
          </label>
-         <label class="modal-form-field">
-            <span class="modal-form-label">Телефон</span>
-         <input class="modal-form-input" required="" type="tel" name="tel">
-         <svg class="modal-form-icon">
+         <label class="modal-form__field">
+            <span class="modal-form__label">Телефон</span>
+         <input class="modal-form__input" required="" type="tel" name="tel">
+         <svg class="modal-form__icon">
             <use href="./img/modal-icon.svg#icon-phone"></use>
          </svg>
          </label>
-         <label class="modal-form-field">
-            <span class="modal-form-label">Почта</span>
-         <input class="modal-form-input" required="" type="tel" name="tel">
-         <svg class="modal-form-icon">
+         <label class="modal-form__field">
+            <span class="modal-form__label">Почта</span>
+         <input class="modal-form__input" required="" type="email" name="email">
+         <svg class="modal-form__icon">
             <use href="./img/modal-icon.svg#icon-email"></use>
          </svg>
          </label>
-         <label class="modal-textarea-field">
-            <span class="modal-textarea-label">Комментарий</span>
-            <textarea class="modal-comment-textarea" name="comment" rows="10" placeholder="Введите текст"></textarea>
+         <label class="modal-textarea__field">
+            <span class="modal-textarea__label">Комментарий</span>
+            <textarea class="modal-comment__textarea" name="comment" rows="10" placeholder="Введите текст"></textarea>
          </label>
-         <label class="modal-checkbox-field">
-            <input class="modal-checkbox-input" required="" type="checkbox" name="policy" value="policy">
-            <svg class="modal-checkbox-icon">
+         <label class="modal-checkbox__field">
+            <input class="modal-checkbox__input" required="" type="checkbox" name="policy" value="policy">
+            <svg class="modal-checkbox__icon">
                <use href="./img/check-icon.svg#chrck-icon"></use>
             </svg>
-         <span class="modal-checkbox-label">Соглашаюсь с рассылкой и принимаю 
-            <a href="#" class="modal-checkbox-link">Условия договора</a>
+         <span class="modal-checkbox__label">Соглашаюсь с рассылкой и принимаю 
+            <a href="#" class="modal-checkbox__link">Условия договора</a>
          </span>
          </label>
-         <button class="modal-submit-button" type="submit">Отправить</button>
-         </form>
+         <button class="modal-submit__button" type="submit">Отправить</button>
+      </form>
          <script src="./js/modal.js"></script>
       </div>
    </div>

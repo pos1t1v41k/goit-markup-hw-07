@@ -1,0 +1,39 @@
+.portfolio {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+.button-portfolio__list {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 50px;
+}
+
+.button-portfolio__item {
+   margin-right: 10px;
+   &:last-child{
+   margin-right: 0;
+   }
+}
+
+.button-portfolio {
+   color: $title-text-color;
+   background-color: $secondary-white-color;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.6;
+   letter-spacing: 0.03em;
+   cursor: pointer;
+   border-radius: 4px;
+   padding: 6px 22px;
+   border: none;
+   transition-duration: $transition-duration;
+   transition-timing-function: $transition-timing-function;
+   &:hover,
+   &:focus {
+   background-color: $accent-color;
+   color: $primary-white-color;
+   }
+}
